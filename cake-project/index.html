@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cakealicious</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Cakealicious</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#wedding-cakes">Wedding Cakes</a></li>
+        <li><a href="#celebration-cakes">Celebration Cakes</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2>Welcome to Cakealicious</h2>
+      <p>Indulge in the most delicious and beautifully crafted cakes for your special occasions.</p>
+    </section>
+
+    <section id="wedding-cakes">
+      <h2>Wedding Cakes</h2>
+      <!-- Add a gallery of wedding cake images here -->
+    </section>
+
+    <section id="celebration-cakes">
+      <h2>Celebration Cakes</h2>
+      <!-- Add a gallery of celebration cake images here -->
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>To place an order or inquire about our cakes, please fill out the form below:</p>
+      <form id="order-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="cake-type">Cake Type:</label>
+        <select id="cake-type" name="cake-type" required>
+          <option value="">Select Cake Type</option>
+          <option value="wedding">Wedding Cake</option>
+          <option value="celebration">Celebration Cake</option>
+        </select>
+
+        <label for="cake-size">Cake Size:</label>
+        <select id="cake-size" name="cake-size" required>
+          <option value="">Select Cake Size</option>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+
+        <button type="submit">Submit Order</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
